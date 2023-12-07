@@ -1,0 +1,41 @@
+/* * {
+    border: 1px solid white;
+} */
+body { 
+    background-color : rgba(1, 17, 61, 0.95);
+    border: 2px double white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.parent { 
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    width: 33.33vw;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 25vw;
+}
+
+@media screen and (max-width: 768px) {
+    .parent {
+        flex-direction: column;
+    }
+    img {
+        width: 50vw;
+    }
+}
